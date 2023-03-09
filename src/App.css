@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content-wrapper{
+  margin: 0 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.recipes-wrapper{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.no-content { 
+  font-family: 'Cormorant Garamond', serif;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 30px;
+  font-weight: 100;
 }
 
-.App-link {
-  color: #61dafb;
+.uil-heart-break{
+  padding-bottom: 30px;
+  color: red;
+  font-size: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 960px) {
+  .content-wrapper {
+      margin: 0 20px;
+    }
+    .recipes-wrapper {
+      margin-top: 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+}
+@media screen and (max-width: 720px) {
+  .recipes-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 25px
+    }
 }

@@ -1,0 +1,55 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.pagination ul {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+  width: 100%;
+}
+
+.pagination ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  font-size: 12px;
+  cursor: pointer;
+  list-style: none;
+  line-height: 30px;
+  border-radius: 50%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.pagination ul li.active span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: #fff;
+  background: red;
+}
+
+.pagination ul li.next-prev span {
+  color: red;
+}
+
+.pagination ul li.prev {
+  margin-right: 20px;
+}
+.pagination ul li.next {
+  margin-left: 20px;
+}
+
+.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}

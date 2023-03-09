@@ -1,0 +1,50 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.recipe-filters-title {
+  font-size: 14px;
+}
+
+input{
+  width: 400px;
+}
+
+input, input:focus {
+  font-family: 'Poppins', sans-serif;
+  height: 35px;
+  padding: 0 25px 0 15px;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  font-weight: 300;
+}
+form{
+  position: relative;
+}
+form .uil-search {
+  position: absolute;
+  right: 15px;
+  top: 20%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .filter {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .recipe-filters-title {
+    margin-bottom: 20px;
+  }
+
+  input {
+     width: 80vw;
+  }
+}
